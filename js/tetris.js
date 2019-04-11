@@ -210,6 +210,9 @@ function endGame() {
     level: gameStatus.level
   });
   $("#highscore").modal();
+  $("#reboot").click(() => {
+    window.location.href = "index.html";
+  });
   highscore.showScoreboard();
 }
 
